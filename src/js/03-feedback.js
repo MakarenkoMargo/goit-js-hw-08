@@ -35,6 +35,7 @@ function onFormSubmit(e) {
   console.log(formData);
   e.currentTarget.reset();
   localStorage.removeItem(LOCALSTORAGE_KEY);
+  formData = {};
 }
 function getData() {
   const savedData = localStorage.getItem(LOCALSTORAGE_KEY);
